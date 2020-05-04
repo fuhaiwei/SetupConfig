@@ -8,4 +8,6 @@ git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
 
 cd ~
 brew update
+
+ln -s /usr/local/Homebrew/completions/bash/brew /usr/local/etc/bash_completion.d
 ```
