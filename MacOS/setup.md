@@ -31,3 +31,8 @@ copy ~/workspace/Config/Common/setting.xml ~/.m2
 ```
 copy ~/workspace/Config/Common/.npmrc ~
 ```
+
+### Setup Mysql
+```
+alter user 'root'@'localhost'IDENTIFIED BY 'fuhaiwei';
+```
