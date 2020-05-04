@@ -1,11 +1,18 @@
-### Setup Brew
+### Clone Config
 ```
-cd "$(brew --repo)"
-git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+git clone git@github.com:fuhaiwei/SetupConfig.git ~/workspace/Config
+cp ~/workspace/Config/Linux/.bash_aliases ~
+cp ~/workspace/Config/Linux/.gitconfig ~
+cp ~/workspace/Config/Linux/.vimrc ~
+```
 
-cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
+### Setup Maven
+```
+mkdir -p ~/.m2
+copy ~/workspace/Config/Common/setting.xml ~/.m2
+```
 
-cd ~
-brew update
+### Setup Node
+```
+copy ~/workspace/Config/Common/.npmrc ~
 ```
