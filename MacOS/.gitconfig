@@ -1,0 +1,45 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = 傅海伟
+#	email = fuhaiwei@fuhaiweideMacBook-Pro.local
+# This is Git's per-user configuration file.
+[user]
+	name = fuhaiwei
+	email = fuhaiwei@126.com
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = simple
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	ce = commit --amend
+	cm = commit -m
+	di = diff
+	dc = diff --cached
+	sw = switch
+	st = status
+	sh = stash
+	rt = reset
+	rd = reset --hard
+	re = rebase
+	ri = rebase -i
+	cp = cherry-pick
+	nd = clean -nd
+	fd = clean -fd
+	hr = reflog show -7
+	hi = log --pretty=format:'%h %ad | %s [%an]' --date=short -7
+	hl = log --oneline -7
+	hs = log --oneline --stat -3
+	vg = config -e --global
+	ve = config -e
+	cf = cat-file
+	tv = tag -l --sort=v:refname
+	tvn = tag -l --sort=-v:refname
+	run-on-branch = filter-branch -f --tree-filter
