@@ -1,10 +1,17 @@
 ### Clone Config
 ```
 git clone git@github.com:fuhaiwei/SetupConfig.git ~/workspace/Config
-cp ~/workspace/Config/MacOS/.gitconfig ~
+```
+
+### Copy Configs
+```
 cp ~/workspace/Config/MacOS/.profile ~
 cp ~/workspace/Config/MacOS/.bashrc ~
-cp ~/workspace/Config/MacOS/.vimrc ~
+
+cp ~/workspace/Config/Common/.gitconfig ~
+cp ~/workspace/Config/Common/.vimrc ~
+cp ~/workspace/Config/Common/.npmrc ~
+mkdir -p ~/.m2; cp ~/workspace/Config/Common/setting.xml ~/.m2
 ```
 
 ### Setup Brew
@@ -19,17 +26,6 @@ cd ~
 brew update
 
 ln -s /usr/local/Homebrew/completions/bash/brew /usr/local/etc/bash_completion.d
-```
-
-### Setup Maven
-```
-mkdir -p ~/.m2
-copy ~/workspace/Config/Common/setting.xml ~/.m2
-```
-
-### Setup Node
-```
-copy ~/workspace/Config/Common/.npmrc ~
 ```
 
 ### Setup Mysql

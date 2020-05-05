@@ -6,10 +6,10 @@
 	excludesfile = ~/.gitignore
 	autocrlf = input
 	editor = vim
-[color]
-	ui = true
 [push]
 	default = simple
+[color]
+	ui = true
 [alias]
 	br = branch
 	co = checkout
