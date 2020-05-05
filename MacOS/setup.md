@@ -18,13 +18,15 @@ cp ~/workspace/Config/Common/setting.xml ~/.m2
 
 ### Setup Brew
 ```
+git clone git@github.com:fuhaiwei/install.git ~/workspace/Soft/brew-install
+bash ~/workspace/Soft/brew-install/install.sh
+
 cd "$(brew --repo)"
 git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
 
 cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
 git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
 
-cd ~
 brew update
 ```
 
@@ -48,6 +50,7 @@ sudo npm -g i n
 sudo npm -g i yarn
 sudo n 8
 sudo n lts
+brew install yarn-completion
 ```
 
 ### Setup Mysql

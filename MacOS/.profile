@@ -6,8 +6,6 @@ fi
 # Set Vars
 export PS1='Mac: \e[36m\W\e[0m $ '
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/openjdk@11'
-export BREW_REPO='https://mirrors.aliyun.com/homebrew/brew.git'
-export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.aliyun.com/homebrew/homebrew-core.git'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Set Path
