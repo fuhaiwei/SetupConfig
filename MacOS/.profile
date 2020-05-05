@@ -1,17 +1,25 @@
-export BASH_SILENCE_DEPRECATION_WARNING=1
-export PS1='Mac: \e[36m\w\e[0m $ '
-
+# Set Path
 if [[ -f ~/.bashrc ]]; then
 	source ~/.bashrc
 fi
 
-if [[ -z $MARK ]]; then
-	export MARK=$PATH
+# Set Vars
+export PS1='Mac: \e[36m\W\e[0m $ '
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/openjdk@11'
+export BREW_REPO='https://mirrors.aliyun.com/homebrew/brew.git'
+export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.aliyun.com/homebrew/homebrew-core.git'
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Set Path
+if [[ -z $system_path ]]; then
+	export system_path=$PATH
 fi
 
-export MYSQL='/usr/local/opt/mysql@5.7/bin'
-export JAVA='/usr/local/opt/openjdk@11/bin'
-export PATH=$MYSQL:$JAVA:$MARK
+java_path='/usr/local/opt/openjdk@11/bin'
+mysql_path='/usr/local/opt/mysql@5.7/bin'
+export PATH=$mysql_path:$java_path:$system_path
+
+# Set Bash Completion
 
 if [[ -e "/usr/local/share/bash-completion/bash_completion" ]]; then
 	export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
