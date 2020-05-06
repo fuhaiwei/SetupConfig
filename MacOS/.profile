@@ -4,8 +4,9 @@ if [[ -f ~/.bashrc ]]; then
 fi
 
 # Set Vars
+target_jdk='/Library/Java/JavaVirtualMachines/openjdk-11.jdk'
 export PS1='Mac: \e[36m\W\e[0m $ '
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/openjdk@11'
+export JAVA_HOME="$target_jdk/Contents/Home"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Set Path
